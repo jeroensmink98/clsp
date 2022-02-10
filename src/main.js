@@ -33,8 +33,10 @@ const run = async() => {
         const quote = await clsp.parseStockQuote(stockSymbol);
 
         console.log(quote);
-    }catch{
 
+        process.exit(0);
+    }catch{
+        throw new Error("Could not run CLI tool...");
     }
 }
 run();
