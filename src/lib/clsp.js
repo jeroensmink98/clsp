@@ -32,8 +32,8 @@ module.exports = {
             const response = await axios(config)
             status.stop();
             return response.data;
-        }catch{
-            throw new Error("Could not create HTTP request..")
+        }catch(error){
+            throw new Error("Missing Finnhub API Key")
         }
        
     },

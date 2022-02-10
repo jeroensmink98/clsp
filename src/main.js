@@ -35,8 +35,8 @@ const run = async() => {
         console.log(quote);
 
         process.exit(0);
-    }catch{
-        throw new Error("Could not run CLI tool...");
+    }catch(error){
+        throw new Error(error);
     }
 }
 run();
