@@ -1,4 +1,4 @@
-# CLSP (Command Line Stock Picer)
+# CLSP (Command Line Stock Picker)
 
 A simple CLI tool to get the current stock price of a given stock.
 
